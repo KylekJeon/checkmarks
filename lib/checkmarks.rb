@@ -1,4 +1,5 @@
 require 'active_record'
+require 'byebug'
 
 require 'checkmarks/checkmarks'
 require 'checkmarks/checkable'

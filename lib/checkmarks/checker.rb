@@ -24,7 +24,7 @@ module Checkmarks
         checkable_class.joins(:checkmarks).where(checkmarks: { checker_id: self.id, checkable_type: checkable_class.name })
       end
       
-      def fecth_checkmarks_by_class(checkable_class)
+      def fetch_checkmarks_by_class(checkable_class)
         Checkmark.where(checker_id: self.id, checkable_type: checkable_class.name)
       end
     end

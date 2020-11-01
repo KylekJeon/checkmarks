@@ -5,7 +5,7 @@ class CheckmarksMigration < Checkmarks::MIGRATION_BASE_CLASS
       t.references :checkable, polymorphic: true
       t.boolean    :preserved, default: false
 
-      t.datetime :timestamp
+      t.timestamps
     end
 
     # Add index in order of most common usage / narrowest query returned per column. Reduce the number of columns to the minimum for optimization

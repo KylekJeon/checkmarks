@@ -1,6 +1,5 @@
 module Checkmarks
   def self.included(base)
-    debugger
     base.extend Base
   end
 
